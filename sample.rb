@@ -3,11 +3,11 @@ require 'clockwork'
 require 'active_support/time'
 include Clockwork
 
-client = SlackNotify::Client.new(webhook_url: "https://hooks.slack.com/services/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")
+client = SlackNotify::Client.new(webhook_url: "https://hooks.slack.com/services/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")
 client.notify("Hey")
 
 client = SlackNotify::Client.new(
-  webhook_url: "https://hooks.slack.com/services/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",
+  webhook_url: "https://hooks.slack.com/services/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",
   channel: "#general",
   username: "webhookbot message",
   icon_url: "http://mydomain.com/myimage.png",
@@ -16,7 +16,7 @@ client = SlackNotify::Client.new(
 )
 client.notify("Fine")
 module Clockwork
-	client = SlackNotify::Client.new(webhook_url: "https://hooks.slack.com/services/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")
+	client = SlackNotify::Client.new(webhook_url: "https://hooks.slack.com/services/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")
 	every(3.minutes, 'Three minutes') do
 		client.notify("Yes!")
 	end
